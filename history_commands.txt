@@ -1,0 +1,58 @@
+  ФИО: Холов Рустам Бахтиёрович
+  Дата сдачи: 2024-10-14
+  Номер группы: 6257
+  307  git clone https://github.com/RustamITKholov/animal-shelter-system.git
+  308  cd animal-shelter-system/
+  309  cat > Pets.txt
+  310  cat Pets.txt
+  311  ll
+  312  cat Pets.txt
+  313  rm Pets.txt 
+  314  ll
+  315  cat > Pets.txt
+  316  ll
+  317  cat Pets.txt
+  318  cat > PackAnimals.txt
+  319  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+  320  ll
+  321  cat HumanFriends.txt
+  322  mv HumanFriends.txt "Human Friends.txt"
+  323  ll
+  324  cat "Human Friends.txt" 
+  325  ls
+  326  git status
+  327  git add Pets.txt PackAnimals.txt "Human Friends.txt"
+  328  git status
+  329  git commit -m "Добавил файлы с животными"
+  330  git config user.email "rustam.kholov.17@mail.ru"
+  331  git config user.name "Rustam Kholov"
+  332  ll
+  333  git commit -m "Добавил файлы с животными"
+  334  git remote show
+  335  git push origin master
+  336  mkdir AnimalRecords
+  337  mv "Human Friends.txt" AnimalRecords/
+  338  ll
+  339  ls AnimalRecords
+  340  ls
+  341  git status
+  342  git add AnimalRecords/
+  343  git status
+  344  git commit -m "Переместил файл Human Friends.txt в директорию AnimalRecords"
+  345  git push origin master
+  346  sudo apt update
+  347  sudo apt install wget
+  348  wget https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb
+  349  sudo dpkg -i mysql-apt-config_0.8.22-1_all.deb
+  350  sudo apt update
+  351  wget -qO - https://dev.mysql.com/doc/refman/8.0/en/checking-gpg-signature.html | sudo apt-key add -
+  352  wget -qO - https://repo.mysql.com/RPM-GPG-KEY-mysql | sudo apt-key add -
+  353  sudo apt update
+  354  sudo apt install mysql-server
+  355  sudo systemctl start mysql
+  356  sudo systemctl status mysql
+  357  sudo mysql -u root -p
+  358  sudo apt install htop
+  359  sudo apt remove htop
+  360  history
+  361  history > history_commands.txt
