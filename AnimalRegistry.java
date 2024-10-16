@@ -32,7 +32,7 @@ public class AnimalRegistry {
         System.out.println("6. Осел");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         System.out.print("Введите имя: ");
         String name = scanner.nextLine();

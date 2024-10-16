@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Animal {
+    private static int animalCount = 0; // Статический счётчик животных
+
     private String type;
     private String name;
     private String birthDate;
@@ -15,6 +17,12 @@ public class Animal {
         this.name = name;
         this.birthDate = birthDate;
         this.commands = new ArrayList<>(Arrays.asList(commands));
+        animalCount++; // Увеличиваем счётчик при создании нового животного
+    }
+
+    // Метод для получения общего количества животных
+    public static int getAnimalCount() {
+        return animalCount;
     }
 
     public String getType() {
